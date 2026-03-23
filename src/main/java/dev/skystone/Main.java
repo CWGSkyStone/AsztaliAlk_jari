@@ -7,7 +7,7 @@ public class Main {
         Solution.printPetrolVehicleDetails();
         Solution.printCheaperThan_OneMillion();
         Solution.printPermitDate_MoreThan_OneYear();
-        Solution.printHondaDetails();
+        Solution.printIfHonda_Details();
         Solution.printIncomeSum();
     }
 }

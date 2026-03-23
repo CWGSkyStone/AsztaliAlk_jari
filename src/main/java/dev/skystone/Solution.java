@@ -43,7 +43,7 @@ public class Solution {
             };
         });
     }
-    public static void printHondaDetails(){
+    public static void printIfHonda_Details(){
         System.out.println("\n" + "Szit.hu 0824-es feladat: 4. feladat");
         vehicleList.forEach(v -> {
             if(v.getBrand().equals("Honda")){
@@ -59,7 +59,7 @@ public class Solution {
         for(Vehicle v:vehicleList){
             sum += v.getPrice();
         }
-        System.out.printf("Összes bevétel: %d Ft%n",sum);
+        System.out.printf("Összes bevétel: %,d Ft%n",sum);
     }
 
 }
