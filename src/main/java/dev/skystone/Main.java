@@ -5,5 +5,8 @@ public class Main {
         Solution.getVehicleList();
         // Solution.printVehicleBrandList();
         Solution.printPetrolVehicleDetails();
+        Solution.printCheaperThan_OneMillion();
+        Solution.printPermitDate_MoreThan_OneYear();
+        Solution.printHondaDetails();
     }
 }

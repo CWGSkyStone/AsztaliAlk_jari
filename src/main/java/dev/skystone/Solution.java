@@ -1,5 +1,6 @@
 package dev.skystone;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Solution {
@@ -17,6 +18,35 @@ public class Solution {
         System.out.println("Szit.hu 0824-es feladat: 1. feladat");
         vehicleList.forEach(v -> {
             if(v.fuel.equals("benzin")){
+                System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
+                v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
+            };
+        });
+    }
+    public static void printCheaperThan_OneMillion(){
+        //Esetlegesen az eldöntés tétel.
+
+        System.out.println("\n" + "Szit.hu 0824-es feladat: 2. feladat");
+        vehicleList.forEach(v -> {
+            if(v.price < 1e6){
+                System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
+                v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
+            };
+        });
+    }
+    public static void printPermitDate_MoreThan_OneYear(){
+        System.out.println("\n" + "Szit.hu 0824-es feladat: 3. feladat");
+        vehicleList.forEach(v -> {
+            if(v.permitDate.isAfter(LocalDate.now().plusYears(1))){
+                System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
+                v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
+            };
+        });
+    }
+    public static void printHondaDetails(){
+        System.out.println("\n" + "Szit.hu 0824-es feladat: 4. feladat");
+        vehicleList.forEach(v -> {
+            if(v.brand.equals("Honda")){
                 System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
                 v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
             };
