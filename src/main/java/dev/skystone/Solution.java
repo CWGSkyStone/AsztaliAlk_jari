@@ -53,4 +53,13 @@ public class Solution {
         });
     }
 
+    public static void printIncomeSum(){
+        System.out.println("\n" + "Szit.hu 0824-es feladat: nem létező feladat");
+        int sum = 0;
+        for(Vehicle v:vehicleList){
+            sum += v.getPrice();
+        }
+        System.out.printf("Összes bevétel: %d Ft%n",sum);
+    }
+
 }

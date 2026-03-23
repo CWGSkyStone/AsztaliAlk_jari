@@ -3,13 +3,13 @@ package dev.skystone;
 import java.time.LocalDate;
 
 public class Vehicle {
-    String plate;
-    String brand;
-    int year;
-    String fuel;
-    int price;
-    boolean climate;
-    LocalDate permitDate;
+    private String plate;
+    private String brand;
+    private int year;
+    private String fuel;
+    private int price;
+    private boolean climate;
+    private LocalDate permitDate;
     
     public Vehicle() {}
     public Vehicle(String plate, String brand, int year, String fuel, int price, boolean climate,

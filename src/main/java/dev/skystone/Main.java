@@ -8,5 +8,6 @@ public class Main {
         Solution.printCheaperThan_OneMillion();
         Solution.printPermitDate_MoreThan_OneYear();
         Solution.printHondaDetails();
+        Solution.printIncomeSum();
     }
 }
