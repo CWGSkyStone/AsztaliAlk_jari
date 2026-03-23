@@ -17,7 +17,7 @@ public class Solution {
     public static void printPetrolVehicleDetails(){
         System.out.println("Szit.hu 0824-es feladat: 1. feladat");
         vehicleList.forEach(v -> {
-            if(v.fuel.equals("benzin")){
+            if(v.getFuel().equals("benzin")){
                 System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
                 v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
             };
@@ -28,7 +28,7 @@ public class Solution {
 
         System.out.println("\n" + "Szit.hu 0824-es feladat: 2. feladat");
         vehicleList.forEach(v -> {
-            if(v.price < 1e6){
+            if(v.getPrice() < 1e6){
                 System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
                 v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
             };
@@ -37,7 +37,7 @@ public class Solution {
     public static void printPermitDate_MoreThan_OneYear(){
         System.out.println("\n" + "Szit.hu 0824-es feladat: 3. feladat");
         vehicleList.forEach(v -> {
-            if(v.permitDate.isAfter(LocalDate.now().plusYears(1))){
+            if(v.getPermitDate().isAfter(LocalDate.now().plusYears(1))){
                 System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
                 v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
             };
@@ -46,7 +46,7 @@ public class Solution {
     public static void printHondaDetails(){
         System.out.println("\n" + "Szit.hu 0824-es feladat: 4. feladat");
         vehicleList.forEach(v -> {
-            if(v.brand.equals("Honda")){
+            if(v.getBrand().equals("Honda")){
                 System.out.printf("%s %s %d %s %d %s %s %n",v.getPlate(),v.getBrand(),v.getYear(),
                 v.getFuel(),v.getPrice(),v.isClimate() ? "Van klíma" : "Nincs klíma",v.getPermitDate());
             };
