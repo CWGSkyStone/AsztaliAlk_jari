@@ -9,5 +9,6 @@ public class Main {
         Solution.printPermitDate_MoreThan_OneYear();
         Solution.printIfHonda_Details();
         Solution.printIncomeSum();
+        Solution.printCheapestVehiclePrice();
     }
 }

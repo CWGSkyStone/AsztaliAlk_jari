@@ -62,4 +62,15 @@ public class Solution {
         System.out.printf("Összes bevétel: %,d Ft%n",sum);
     }
 
+    public static void printCheapestVehiclePrice(){
+        System.out.println("\n" + "Szit.hu 0824-es feladat: nem létező feladat");
+        int min = vehicleList.get(0).getPrice();
+        for(Vehicle v:vehicleList){
+            if(v.getPrice() < min){
+                min = v.getPrice();
+            }
+        }
+        System.out.printf("Legolcsóbb jármű:  %,d Ft%n",min);
+    }
+
 }
